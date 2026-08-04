@@ -13,5 +13,21 @@
             <label>Prazo</label><input type="text" name="deadLine"/><br>
             <button type="submit">Salvar</button>
         </form> 
+
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Titulo</th><th>Criada em</th><th>Prazo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each = "todo : ${todos}">
+                    <td th:text = "${todo.title}"></td>
+                    <td th:text = "${todo.createdAt}"></td>
+                    <td th:text = "${todo.deadLine}"></td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
