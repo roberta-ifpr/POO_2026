@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ops!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Deu ruim</h1>
+        <p>
+            Erro: <span th:text="${status}"></span> 
+        </p>
+        <img th:src="@{'https://http.dog/'+${status}+'.jpg'}"  alt="Cachorro representando o erro http" width="500">
+
+        <br><br>
+        <a href="/">Voltar para a pagina inicial </a>
+        
+    </body>
+</html>
