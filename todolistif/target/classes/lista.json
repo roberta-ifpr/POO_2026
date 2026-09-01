@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "nome":"Mouse",
+        "preco":65.90
+    },
+    {
+        "id":2,
+        "nome":"Teclado",
+        "preco":165.90
+    },
+    {
+        "id":3,
+        "nome":"Monitor",
+        "preco":1200.00
+    }
+]
